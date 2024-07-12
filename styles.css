@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --light-grey: hsl(217, 12%, 63%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --semi-dark-blue:hsl(213, 19%, 22%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  height: 100vh;
+  background-color: var(--very-dark-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--dark-blue);
+  width: 290px;
+  height: auto;
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+.card h1 {
+  color: white;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+.card p {
+  color: var(--light-grey);
+  font-size: 12px;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+.card .icon-wrapper {
+  width: 35px;
+  height: 35px;
+  background-color: var(--semi-dark-blue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+.card .star-icon {
+  width: 12px;
+  height: auto;
+}
+.card .rating-button-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+.card button {
+  background: none;
+  border: none;
+  padding: 0;
+  outline: none;
+  background-color: var(--semi-dark-blue);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  color: var(--light-grey);
+  font-size: 10px;
+}
+.card button:hover {
+  background-color: var(--orange);
+  color: var(--very-dark-blue);
+}
+.card .submit-button {
+  background-color: var(--orange);
+  width: 100%;
+  border-radius: 24px;
+  color: var(--very-dark-blue);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  font-size: 11px;
+}
+.card .submit-button:hover {
+  background-color: white;
+}
+.card .thank-you-view {
+  display: none;
+}
+.card .thank-you-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card .thank-you-content-wrapper .user-rating-selection {
+  background-color: var(--semi-dark-blue);
+  display: inline;
+  padding-inline: 15px;
+  border-radius: 18px;
+  padding-block: 7px;
+  color: var(--orange);
+  font-size: 12px;
+  margin-block: 1.25rem;
+}
+.card .thank-you-content-wrapper p {
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.card button.clicked {
+  background-color: white;
+  color: var(--very-dark-blue);
+}
+
+/*# sourceMappingURL=styles.css.map */
